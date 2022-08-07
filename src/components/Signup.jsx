@@ -10,7 +10,7 @@ export default function Signup(props) {
         if(credentials.password!= credentials.cpassword){
             return  props.showAlert("Password doesn't match","danger");
         }
-        const response= await fetch("http://127.0.0.1:5000/api/auth/createuser", {
+        const response= await fetch("https://cloudnote7.herokuapp.com/api/auth/createuser", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
