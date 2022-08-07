@@ -2,6 +2,26 @@ nav {
   height: 8vh;
 }
 
+@media screen and (max-width:920px){
+  li {
+    display: inline-block;
+    width: 13vw;
+  }
+  #nav-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: -3vh;
+    margin-left: 30vw;
+  }
+  form {
+    width: 43vw;
+    margin-left: -5vw;
+  }
+  form a{
+    width: 10vw;
+  }
+}
+
 
 @media screen and (max-width: 420px) {
   li {
@@ -28,5 +48,8 @@ nav {
         margin-top: -6vh;
     }
 }
+
+
+
 
 
