@@ -1,0 +1,32 @@
+nav {
+  height: 8vh;
+}
+
+
+@media screen and (max-width: 420px) {
+  li {
+    display: inline-block;
+    width: 10vw;
+  }
+  #nav-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: -5vh;
+    margin-left: 30vw;
+  }
+  form {
+    width: 33vw;
+  }
+}
+
+@media screen and (max-height:760px){
+    form{
+        width: 36vw;
+    }
+    #nav-list{
+        margin-left: 26vw;
+        margin-top: -6vh;
+    }
+}
+
+

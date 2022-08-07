@@ -1,0 +1,12 @@
+
+
+#notescon{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding:3vh;
+}
+
+h2{
+    text-align: center;
+}

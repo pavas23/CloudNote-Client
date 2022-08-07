@@ -1,0 +1,17 @@
+
+
+#homeparent{
+    width: 100vw;
+    height: 92vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+
+}
+
+@media screen and (max-height:760px){
+    #homeparent{
+        height: 110vh;
+    }
+}
+
