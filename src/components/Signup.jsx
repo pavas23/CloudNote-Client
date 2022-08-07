@@ -39,30 +39,34 @@ export default function Signup(props) {
     };
     return (
         <>
-        <div id = "signupparent">
-        <div className = "container" id="signupcon">
-        <h2>Create Account to use CloudNote</h2>
-            <form onSubmit = {handlesubmit} id="signupform" autoComplete="off">
-            <div className="mb-0">
-                    <label htmlFor="name" className="form-label">Name</label>
-                    <input className="signinput" type="text"  name="name" onChange={onchange} id="name" required aria-describedby="emailHelp"/>
+                 <div id="signupparent">
+                <div className="container" id="signupcon">
+                    <span id="signupimg">
+                        <img src="./cloud-icon.png" />
+                        <h2>Create Account to use CloudNote</h2>
+                    </span>
+                    <form onSubmit={handlesubmit} id="signupform" autoComplete="off">
+                        <div className="mb-0">
+                            {/* <label htmlFor="name" className="form-label">Name</label> */}
+                            <input className="signinput" type="text" name="name" onChange={onchange} placeholder="Name" id="name" required aria-describedby="emailHelp" />
+                        </div>
+                        <div className="mb-0">
+                            {/* <label htmlFor="email" className="form-label">Email Address</label> */}
+                            <input className="signinput" type="email" name="email" placeholder="Email Address" onChange={onchange} id="email" required aria-describedby="emailHelp" />
+                        </div>
+                        <div className="mb-0">
+                            {/* <label htmlFor="password" className="form-label">Password</label> */}
+                            <input className="signinput" type="password" placeholder="Password" name="password" onChange={onchange} id="password" required minLength={5} />
+                        </div>
+                        <div className="mb-0">
+                            {/* <label htmlFor="cpassword" className="form-label">Confirm Password</label> */}
+                            <input className="signinput" type="password" placeholder="Confirm Password" name="cpassword" onChange={onchange} id="cpassword" required minLength={5} />
+                        </div>
+                        <button type="submit" id="signupbtn" className="btn btn-primary">Sign up</button>
+                    </form>
                 </div>
-                <div className="mb-0">
-                    <label htmlFor="email" className="form-label">Email Address</label>
-                    <input  className="signinput" type="email"  name="email" onChange={onchange} id="email" required aria-describedby="emailHelp"/>
-                </div>
-                <div className="mb-0">
-                    <label htmlFor="password" className="form-label">Password</label>
-                    <input className="signinput" type="password"  name="password" onChange={onchange} id="password" required minLength={5}/>
-                </div>
-                <div className="mb-0">
-                    <label htmlFor="cpassword" className="form-label">Confirm Password</label>
-                    <input className="signinput" type="password" name="cpassword" onChange={onchange} id="cpassword" required minLength={5}/>
-                </div>
-                <button type="submit" id="signupbtn" className="btn btn-primary">Sign up</button>
-            </form>
             </div>
-            </div>
+
         </>
     );
 }
