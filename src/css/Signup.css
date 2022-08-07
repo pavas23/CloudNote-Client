@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -8,10 +9,13 @@
     justify-content: center;
 }
 #signupcon{
+    /* box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px; */
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    font-family: 'Playfair Display', serif;
     padding-top: 4vh;
     margin-top: 3vh !important;
-    border:2px solid black;
-    height: 78vh;
+    border:2px solid rgb(38, 57, 77);
+    height: 60vh;
     width: 40vw;
     margin: auto;
     display: flex;
@@ -19,6 +23,17 @@
     justify-content: flex-start;
     align-items: center;
     background-color: white;
+}
+#signupimg{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+#signupimg img{
+    margin-left: -1vw;
+    margin-right: 0.5vw;
+    height: 3vw;
+    width: 3vw;
 }
 h2{
     text-align: center;
@@ -53,6 +68,24 @@ h2{
 #signupbtn{
     width: 25%;
 }
+.signinput::placeholder{
+    text-align: center;
+}
+
+@media screen and (max-width:920px){
+    #signupcon{
+        width: 80vw;
+    }
+    #signupbtn{
+        width: 40%;
+    }
+    #signupimg img{
+        margin-right: 2vw;
+        height: 5.5vw;
+        width: 5.5vw;
+    }
+
+}
 
 
 @media screen and (max-width:420px){
@@ -62,12 +95,28 @@ h2{
     #signupbtn{
         width: 40%;
     }
+    #signupimg img{
+        margin-top: 0.5vh;
+        margin-right: 0.5vw;
+        height: 6.5vw;
+        width: 6.5vw;
+    }
+}
+
+@media screen and (max-width:370px){
+    #signupimg img{
+        margin-top: 0.5vh;
+        height: 9vw;
+        width: 9vw;
+    }
 }
 
 @media screen and (max-height:760px){
     #signupcon{
-        height: 90vh;
+        height: 68vh;
     }
 }
+
+
 
 
