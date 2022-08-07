@@ -2,7 +2,7 @@ nav {
   height: 8vh;
 }
 
-@media screen and (max-width:920px){
+ @media screen and (max-width:920px){
   li {
     display: inline-block;
     width: 13vw;
@@ -36,6 +36,10 @@ nav {
   }
   form {
     width: 33vw;
+    margin-left: 0;
+  }
+  form a{
+    width: auto;
   }
 }
 
