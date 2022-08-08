@@ -30,7 +30,7 @@ export default function AddNote() {
         <>
             <div className="container" id="addnotecon">
                 <h2>Add your Notes</h2>
-                <form autoComplete="off">
+                <form autoComplete="off" onSubmit={handleclick}>
                     <div className="mb-3" className="addnoteinput">
                         <label htmlFor="title" className="form-label">Title</label>
                         <input type="text" className="form-control" name = "title" id="title"  aria-describedby="emailHelp" onChange={onchange} minLength="3"/>
@@ -43,7 +43,7 @@ export default function AddNote() {
                         <label htmlFor="exampleInputPassword1" className="form-label">Tag</label>
                         <input type="text" className="form-control" id="tag"  name="tag"onChange={onchange} />
                     </div>
-                    <button type="submit" id="addnotebtn"  className="btn btn-primary" onClick ={handleclick}>Add note</button>
+                    <button type="submit" id="addnotebtn"  className="btn btn-primary">Add note</button>
                 </form>
             </div>
         </>
