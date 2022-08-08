@@ -33,11 +33,11 @@ export default function AddNote() {
                 <form autoComplete="off">
                     <div className="mb-3" className="addnoteinput">
                         <label htmlFor="title" className="form-label">Title</label>
-                        <input type="text" className="form-control" name = "title" id="title"  aria-describedby="emailHelp" onChange={onchange} />
+                        <input type="text" className="form-control" name = "title" id="title"  aria-describedby="emailHelp" onChange={onchange} minLength="5"/>
                     </div>
                     <div className="mb-3" className="addnoteinput">
                         <label htmlFor="exampleInputPassword1" className="form-label">Description</label>
-                        <textarea rows="4" type="text" className="form-control" id="description"  name="description"onChange={onchange} />
+                        <textarea rows="4" type="text" className="form-control" id="description"  name="description"onChange={onchange} minLength="5" />
                     </div>
                     <div className="mb-3" className="addnoteinput">
                         <label htmlFor="exampleInputPassword1" className="form-label">Tag</label>
