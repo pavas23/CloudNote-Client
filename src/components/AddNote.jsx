@@ -12,6 +12,9 @@ export default function AddNote() {
         tag:""
     });
     const handleclick = (event)=>{
+        if(note.title.length==0 || note.description.length==0){
+            return alert("Title or description can not be blank");
+        }
         event.preventDefault();
         addNote(note.title,note.description,note.tag);
         document.getElementById("tag").value = "";
