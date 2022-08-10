@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/CloudNote-Client/static/css/main.fdcb7c59.css",
+    "main.js": "/CloudNote-Client/static/js/main.2bc734e7.js",
+    "index.html": "/CloudNote-Client/index.html",
+    "main.fdcb7c59.css.map": "/CloudNote-Client/static/css/main.fdcb7c59.css.map",
+    "main.2bc734e7.js.map": "/CloudNote-Client/static/js/main.2bc734e7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fdcb7c59.css",
+    "static/js/main.2bc734e7.js"
+  ]
+}
